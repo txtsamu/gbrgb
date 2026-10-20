@@ -1,0 +1,10 @@
+[Unit]
+Description=Apply Gigabyte RGB Fusion 2 lighting (D_LED2 fan)
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/gbrgb apply
+
+[Install]
+WantedBy=multi-user.target
